@@ -1,0 +1,144 @@
+<html>
+        <head>
+                <title>Student Registration Form</title>
+            <script type="text/javascript" src="validate.js"></script>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+                <a href="#" class="logo">
+                                <img src="img/IMG-20181109-WA0074.jpg" alt="logo"
+                                height="50px"
+                                width="100px">
+            
+                                </a>
+                                <br>
+                                <br>
+                                <br>
+                                
+                               
+                                    
+                                    <form action="insert.php" method=Post name="StudentRegistration" onsubmit="return(validate());">
+                                    
+                                    <table cellpadding="2" width="100%" background-color="#fff" align="center"
+                                    cellspacing="2">
+                                    
+                                    <tr>
+                                    <td colspan=2>
+                                    <center><font size=4><b>Student Registration Form</b></font></center>
+                                    </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                    <td>Name</td>
+                                    <td><input type=text name=textname id="textname" size="30"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                    <td>Father's Name</td>
+                                    <td><input type="text" name="fathername" id="fathername"
+                                    size="30"></td>
+                                    </tr>
+                                    <tr>
+                                    <td>Postal Address</td>
+                                    <td><input type="text" name="paddress" id="paddress" size="30"></td>
+                                    </tr>
+                                    
+                                    
+                                    <tr>
+                                    <td>Sex</td>
+                                    <td><input type="radio" name="sex" value="Male" size="10">Male
+                                    <input type="radio" name="sex" value="Female" size="10">Female</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Is the Student Blind?</td>
+                                        <td><input type="radio" name="blind" value="Yes" size="10">Yes
+                                        <input type="radio" name="blind" value="No" size="10">No</td>
+                                        </tr>
+                                    
+                                    <tr>
+                                    <td>City</td>
+                                    <td><select name="City">
+                                    <option value="-1" selected>select..</option>
+                                    <option value="Belagavi">Belagavi</option>
+                                    <option value="Mumbai">MUMBAI</option>
+                                    <option value="Kolhapur">Kolhapur</option>
+                                    <option value="Pune">Pune</option>
+                                    <option value="Bengaluru">Bengaluru</option>
+                                    <option value="Hubli">Hubli</option>
+                                    <option value="Dharwad">Dharwad</option>
+
+                                    </select></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                    <td>Course</td>
+                                    <td><select name="Course">
+                                    <option value="-1" selected>select..</option>
+                                    <option value="Vocal(singing)">Vocal(singing)</option>
+                                    <option value="Tabla">Tabla</option>
+                                    <option value="Octapad">Octapad</option>
+                                    <option value="Drum">Drum</option>
+                                    <option value="Tabla">Tabla</option>
+                                    <option value="Harmonium">Harmonium</option>
+                                    </select></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                    <td>District</td>
+                                    <td><select name="District">
+                                    <option value="-1" selected>select..</option>
+                                    <option value="Belagavi District">Belagavi District</option>
+                                    <option value="Dharwad District">Dharwad District</option>
+                                    <option value="Kolhapur District">Kolhapur District</option>
+                                    <option value="Bangalore Urban District">Bangalore Urban District</option>
+                                    <option value="Bangalore Rural District">Bangalore Rural District</option>
+                                    <option value="Pune District">Pune District</option>
+                                    <option value="Mumbai City District">Mumbai City District</option>
+                                    <option value="Mumbai Suburban District">Mumbai Suburban District</option>
+                                    </select></td>
+                                    
+                                    </tr>
+                                    
+                                    <tr>
+                                    <td>State</td>
+                                    <td><select name="State">
+                                    <option value="-1" selected>select..</option>
+                                    <option value="Karnataka">Karnataka</option>
+                                    <option value="Maharashtra">Maharashtra</option>
+                                    
+                                    </select></td>
+                                    </tr>
+                                    <tr>
+                                    <td>Pin-Code</td>
+                                    <td><input type="text" name="pincode" id="pincode" size="30"></td>
+                                    
+                                    </tr>
+                                    <tr>
+                                    <td>Email-Id</td>
+                                    <td><input type="email" name="emailid" id="emailid" size="30"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                    <td>Date Of Birth</td>
+                                    <td><input type="date" name="dob" id="dob" size="30"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>Mobile-Number</td>
+                                        <td><input type="text" name="mobileno" id="mobileno" size="30"></td>
+                                        </tr>
+                                        <tr>
+                                        <td><input type="reset"
+                                                style= "color:darkmagenta; font-size: larger; background-color:white;"></td>
+                                        <td colspan="2"><input type="submit" style= "color:darkmagenta; font-size: larger; background-color:white;" name="submit" value="Submit Form" /></td>
+                                        </tr>
+                                        </table>
+                                        </form>
+                                     
+</body>
+</html>
